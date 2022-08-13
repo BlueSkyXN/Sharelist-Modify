@@ -18,3 +18,5 @@ drive.lanzou.js中的
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 drive.caiyun.js中的
 https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
+drive.baidu.js中的
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
