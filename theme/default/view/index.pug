@@ -45,12 +45,12 @@ block content
               span.file-modified.col-md-3.col-sm-4.hidden-xs.text-right
                 | #{i.updated_at}
   -if(readme)
-    link(rel='stylesheet', type='text/css', href='https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.min.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css')
     section.wrap(style="margin-top:64px;border-top:1px solid #eee;")
       article.markdown-body(style="padding:32px;")
         | !{readme}
-  script('data-no-instant',src='https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js')
-  script('data-no-instant',src='https://cdn.bootcdn.net/ajax/libs/instantclick/3.1.0/instantclick.min.js')
+  script('data-no-instant',src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script('data-no-instant',src='https://cdnjs.cloudflare.com/ajax/libs/instantclick/3.1.0/instantclick.min.js')
   script('data-no-instant',src='/script/main.js?'+__timestamp__)
   script('data-no-instant').
     InstantClick.init('mousedown')
