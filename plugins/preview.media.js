@@ -48,8 +48,8 @@ module.exports = ({getSource , getPluginOption , setPluginOption , getConfig}) =
       //   <video src="${req.path}" style="min-width: 90%;min-height: 60vh;" controls="controls" autoplay="autoplay"></video>
       // `,
        body: videoPlayer == 'dplayer' ? `
-        <script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
-        <script src="https://cdn.bootcss.com/dplayer/1.25.1/DPlayer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.25.1/DPlayer.min.js"></script>
         <div id="dplayer" style="height:100%;"></div>
         <script>
           var url = '${convUrl(req,{'preview_page':1})}' , subtitle = url.replace(/\\.[^\\.]+?(\\?|$)/,'.vtt$1');
@@ -96,8 +96,8 @@ module.exports = ({getSource , getPluginOption , setPluginOption , getConfig}) =
     return {
       ...data,
        body: `
-        <script src="https://cdn.bootcss.com/hls.js/8.0.0-beta.3/hls.min.js"></script>
-        <script src="https://cdn.bootcss.com/dplayer/1.25.1/DPlayer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/8.0.0-beta.3/hls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.25.1/DPlayer.min.js"></script>
         <div id="dplayer" style="margin-top:32px;height:60vh;"></div>
         <script>
           var url = '${convUrl(req)}';

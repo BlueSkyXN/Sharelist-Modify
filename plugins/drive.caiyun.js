@@ -334,7 +334,7 @@ class Manager {
 
   async install(msg) {
     return `
-      <script data-no-instant src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script data-no-instant src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <div class="auth">
         <h3>和彩云 挂载向导</h3>
         ${ msg ? '<p style="font-size:12px;">'+msg+'</p>' : '' }

@@ -452,7 +452,7 @@ class Manager {
     }
 
     return { id:'onedrive-install', type: 'folder', protocol, body: `
-      <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <style>
         .auth{
           width: 80%;

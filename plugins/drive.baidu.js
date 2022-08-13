@@ -303,7 +303,7 @@ class Manager {
   install(error) {
     let disabled = !APP_KEY || !SECRET_KEY
     return { id:'onedrive-install', type: 'folder', protocol, body: `
-        <script data-no-instant src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script data-no-instant src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <style>
         .auth{

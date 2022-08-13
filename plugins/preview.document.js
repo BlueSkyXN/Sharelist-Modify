@@ -21,7 +21,7 @@ module.exports = ({ getSource , getConfig, request }) => {
     //<iframe style="width:auto;height:auto;"></iframe><script>document.querySelector("iframe").contentWindow.document.write(`'+html+'`);</script>
     return {
       ...data,
-      body: '<link href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.min.css" rel="stylesheet"><article class="markdown-body" style="text-align:left;padding:16px;" itemprop="text">'+html+'</article>'
+      body: '<link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css" rel="stylesheet"><article class="markdown-body" style="text-align:left;padding:16px;" itemprop="text">'+html+'</article>'
     }
   }
 
@@ -36,7 +36,7 @@ module.exports = ({ getSource , getConfig, request }) => {
     let html = await getSource(data.id , data.protocol, data)
     return {
       ...data,
-      body: '<link href="https://cdn.bootcss.com/github-markdown-css/3.0.1/github-markdown.min.css" rel="stylesheet"><article class="markdown-body" style="text-align:left;padding:16px;" itemprop="text"><p style="font-size:13px;line-height:1.8em;">'+html+'</p></article>'
+      body: '<link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css" rel="stylesheet"><article class="markdown-body" style="text-align:left;padding:16px;" itemprop="text"><p style="font-size:13px;line-height:1.8em;">'+html+'</p></article>'
     }
   }
 

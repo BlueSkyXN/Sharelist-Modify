@@ -73,7 +73,7 @@ const updateFile = (f) => {
 const accessPage = (name) => {
   return `
     <div class="menu"><div class="auth"><h3>${name}</h3><div><div class="form-group"><input class="sl-input" id="j_passwd" type="password" name="passwd" placeholder="请输入密码"></div><button class="sl-button btn-primary" id="signin" type="submit" onclick="checkAuth()">确定</button></div></div></div>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       function checkAuth(){
         let passwd = $('#j_passwd').val(),path = location.pathname
